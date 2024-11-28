@@ -16,7 +16,7 @@
  
  .pkp_structure_page {
      max-width: 1200 !important;
-     box-shadow: none !important;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
      max-width: 1160px;
  }
  .pkp_head_wrapper{
@@ -99,22 +99,19 @@
  /* NEW FRAME */
  body{
      /* white */
-     background: url("https://raw.githubusercontent.com/Isabel621/OJS-Theme/main/asset/pattern-lentera.png");
+     background: url("https://raw.githubusercontent.com/Isabel621/OJS-Theme/main/assets/pattern-lentera.png");
      background:
      linear-gradient(
          180deg,
-         rgba(39,60,117,1) 130px,
-         rgba(225,173,33,1) 130px,
-         rgba(225,173,33,1) 170px,
          rgba(255,255,255,0.1) 170px,
          rgba(255,255,255,0.1) 100%),
-         url("https://raw.githubusercontent.com/Isabel621/OJS-Theme/main/asset/pattern-lentera.png") !important;
+         url("https://raw.githubusercontent.com/Isabel621/OJS-Theme/main/assets/pattern-lentera.png") !important;
  }
  
  .pkp_structure_page{
      max-width: 1200 !important;
      margin: 0px auto 25px auto !important;
-     box-shadow: none !important;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
  }
  .pkp_head_wrapper{
      margin: 0px !important;
@@ -132,7 +129,7 @@
  
  /* Search Button */
  .fa.fa-search{
-     color: #273c75;
+     color: var(--main);
  }
  
  .pkp_search.pkp_search_desktop{
@@ -166,13 +163,13 @@
      display: block;
      text-align: center;
      text-transform: uppercase;
-     background: #273c75;
+     background: var(--main);
      color: #fff;
      border: none;
      transition: background 0.3s ease; /* Menambahkan transisi untuk perubahan warna */
  }
  a.block_make_submission_link:hover{
-     background: #E1AD21; /* Mengubah warna latar belakang saat hover */
+     background: var(--secondary); /* Mengubah warna latar belakang saat hover */
      color: #fff; /* Tetap putih saat hover */
      
  }
@@ -243,14 +240,14 @@
     color:#ffffff;
  }
  .pkp_navigation_primary_wrapper {
-     background-color: var(--secondary);
+     background-color: #fff;
  }
  .pkp_navigation_primary_row {
-     background: var(--secondary);
+     background: #fff;
      margin-top: 10px;
  }
  #pkp_content_nav{
-         background: var(--secondary);
+         background: #fff;
  }
  
  /* Main Background */
