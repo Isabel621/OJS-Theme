@@ -111,13 +111,13 @@
      }
  }
 
-.pkp_site_name .is_img img {
-    max-height: 80px;
-}
+ .pkp_site_nav_menu{
+    margin-top: 80px;
+ }
 
 .pkp_head_wrapper{
-    background-color: var(--biru); /* main */
-    background-image: url("https://raw.githubusercontent.com/Isabel621/OJS-Theme/main/assets/header_historica.png");
+    background-color: var(--main); /* main */
+    background-image: url("https://raw.githubusercontent.com/Isabel621/OJS-Theme/main/assets/header-historica__.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
