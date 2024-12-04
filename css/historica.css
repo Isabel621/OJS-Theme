@@ -1,7 +1,7 @@
 :root {
     --background : #FFF;  
-    --main       : #2d4470;  
-    --secondary  : #4B7D92;  
+    --main       : #CB0003;  
+    --secondary  : #08443F;  
  }
  
  /* Custom theme by IsabelAprilia*/
@@ -11,14 +11,17 @@
      font-size: 14px;
      line-height: 1.43rem;
      color: rgba(0, 0, 0, 0.87);
-     background: transparent;
+     background: var(--background);
  }
  
- .pkp_structure_page {
-     max-width: 1200 !important;
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
-     max-width: 1160px;
- }
+    
+.pkp_structure_page {
+    max-width: 1200 !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;    
+	max-width: 1160px !important;
+}
+
+
  .pkp_head_wrapper{
      width: auto !important;
  }
@@ -35,9 +38,21 @@
      color: var(--background);
  }
  #navigationUser a span{
-     color: #fff;
+     color: var(--main);
      top: 0;
  }
+
+ #navigationPrimary ul li a {
+    background: var(--main);
+    color: var(--background);
+}
+
+@media (min-width: 992px) {
+    .pkp_nav_list ul {
+        background: var(--main) !important;
+        
+    }
+}
  
  @media (min-width: 992px) {
      .pkp_nav_list a {
@@ -97,26 +112,38 @@
  }
 
 .pkp_site_name .is_img img {
-    max-height: 200px !important;
+    max-height: 80px;
 }
+
+.pkp_head_wrapper{
+    background-color: var(--biru); /* main */
+    background-image: url("https://raw.githubusercontent.com/darkun7/ojs-theme/main/asset/cover-wartapengabdian-g15.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 210px;
+    background-position: 2px -79px;
+  }
  
  /* NEW FRAME */
  body{
      /* white */
-     background: url("https://raw.githubusercontent.com/Isabel621/OJS-Theme/main/assets/pattern_historica.jpg");
+     background: url("https://raw.githubusercontent.com/Isabel621/OJS-Theme/main/assets/pattern_historica_.png");
      background:
      linear-gradient(
          180deg,
          rgba(255,255,255,0.1) 170px,
          rgba(255,255,255,0.1) 100%),
-         url("https://raw.githubusercontent.com/Isabel621/OJS-Theme/main/assets/pattern_historica.jpg") !important;
+         url("https://raw.githubusercontent.com/Isabel621/OJS-Theme/main/assets/pattern_historica_.png") !important;
  }
  
  .pkp_structure_page{
      max-width: 1200 !important;
-     margin: 0px auto 25px auto !important;
+     margin: 0px auto 30px auto !important;
      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
  }
+
+ 
  .pkp_head_wrapper{
      margin: 0px !important;
  }
@@ -133,7 +160,7 @@
  
  /* Search Button */
  .fa.fa-search{
-     color: var(--main);
+     color: var(--background);
  }
  
  .pkp_search.pkp_search_desktop{
@@ -143,7 +170,7 @@
  .pkp_site_nav_menu .pkp_nav_list a{
      font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
      font-size: 13px;
-     color: rgba(0, 0, 0, 0.54);
+     color: #FFF;
      font-weight: 700;
      text-transform: uppercase;
  }
@@ -151,7 +178,7 @@
  .pkp_site_nav_menu .pkp_nav_list a:focus{
      font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
      font-size: 13px;
-     color: #273c75;
+     color: #fff;
      background-color: transparent;
      font-weight: 700;
      text-transform: uppercase;
@@ -240,14 +267,20 @@
  .pkp_structure_head {
      background-image: none!important;
  }
+
+ .pkp_structure_head {
+    background-color: #fff !important;
+    border-bottom: 1px solid #ddd;
+}
+
  .pkp_site_name .is_text{
     color:#ffffff;
  }
  .pkp_navigation_primary_wrapper {
-     background-color: #fff;
+     background-color: var(--main);
  }
  .pkp_navigation_primary_row {
-     background: #fff;
+     background: var(--main);
      margin-top: 10px;
  }
  #pkp_content_nav{
@@ -262,7 +295,7 @@
  .pkp_structure_footer_wrapper {
      background: rgba(0, 0, 0, 0.05);
      border-top: 1px solid #ddd;
-     border-bottom: 20px solid #273c75;
+     border-bottom: 20px solid #CB0003;
  }
  
  
