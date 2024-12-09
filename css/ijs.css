@@ -16,7 +16,7 @@
  
  .pkp_structure_page {
      max-width: 1200 !important;
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+     box-shadow: none !important;
      max-width: 1160px;
  }
  .pkp_head_wrapper{
@@ -118,14 +118,21 @@
  
  /* NEW FRAME */
  body{
-     /* white */
-     background: #f7f7f7;
+     background:
+     linear-gradient(
+         180deg,
+         rgb(204, 204, 204) 130px,
+         rgb(126, 2, 2) 130px,
+         rgb(126, 2, 2) 170px,
+         rgba(255,255,255,0.1) 170px,
+         rgba(255,255,255,0.1) 100%) !important;
+    background-repeat: no-repeat !important;
  }
  
  .pkp_structure_page{
      max-width: 1200 !important;
-     margin: 30px auto 30px auto !important;
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+     margin: 0px auto 30px auto !important;
+     box-shadow: none !important;
  }
  .pkp_head_wrapper{
      margin: 0px !important;
@@ -153,7 +160,7 @@
     }}
  
  .pkp_search.pkp_search_desktop{
-     color: rgba(0, 0, 0, 0.54);
+     color: #fff;
  }
  
  .pkp_site_nav_menu .pkp_nav_list a{
@@ -277,6 +284,14 @@
     font-weight: 700;
     text-transform: uppercase;
 }
+
+.pkp_block {
+    font-size: 14px;
+    line-height: 20px;
+    clear: both;
+    border-bottom: 1.5px solid #ddd;
+}
+
 .sidemenu-head {
     background-color: #63C19D !important;
     display: block !important;
