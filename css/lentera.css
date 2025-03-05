@@ -156,6 +156,22 @@
      font-weight: 700;
      text-transform: uppercase;
  }
+
+ @media (min-width: 992px) {
+    [data-toggle="dropdown"]:hover+.dropdown-menu, .dropdown-menu:hover {
+        display: block;
+        background-color: var(--main);
+    }}
+
+@media (min-width: 992px) {
+    .pkp_nav_list ul li:first-child a {
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        color: #fff;
+    }
+}
+
+
  
  /* SUBMISSION BUTTON */
  

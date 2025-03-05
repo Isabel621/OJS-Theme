@@ -1,9 +1,7 @@
 :root {
-    --biru        : #273C75;
-    --hijau       : #006752;
-    --kuning      : #FDBA34;
-    --kuningcerah : #F7ED55;
-    --background  : #FAFAFA;  
+    --background : #FFF;  
+    --main       : #3f5e85;  
+    --secondary  : #DED9C3;
  }
  
  /* Custom theme by IsabelAprilia*/
@@ -18,19 +16,19 @@
  
  .pkp_structure_page {
      max-width: 1200 !important;
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+     box-shadow: none !important;
      max-width: 1160px;
  }
  .pkp_head_wrapper{
      width: auto !important;
  }
  #navigationUser{
-     margin-right: 50%;
-     background-color: var(--main) !important;
+     background-color: var(--secondary) !important;
      border-radius: 50px;
      padding-right: 10px;
      max-width: 150px;
      margin-left: 50% ;
+     display: flex;
  }
  #navigationUser a{
      text-align: left !important;
@@ -40,6 +38,22 @@
      color: #fff;
      top: 0;
  }
+
+
+#navigationPrimary ul li a {
+    background: var(--secondary);
+    color: var(--background);
+}
+
+#navigationPrimary ul li a:hover {
+    color: var(--secondary);
+}
+
+.pkp_search.pkp_search_desktop:hover {
+    color: var(--main);
+}
+
+
  
  @media (min-width: 992px) {
      .pkp_nav_list a {
@@ -62,21 +76,11 @@
      padding-left: 50px;
      padding-right: 50px;
  }
-
- a.block_make_submission_link {
-    padding: 5px 10px;
-    width: 100%;
-    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
-    font-weight: 700;
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
-    background: var(--main);
-    color: #fff;
-    border: none;
-    transition: background 0.3s ease;
-}
  
+ .pkp_site_name_wrapper {
+    background: #3f5e85 !important;
+}
+
  @media only screen and (min-width: 360px) {
      .pkp_navigation_user{
          max-width: 150px !important;
@@ -115,33 +119,25 @@
 .pkp_site_name .is_img img {
     max-height: 80px;
 }
-
-.pkp_head_wrapper{
-    background-color: var(--biru); /* main */
-    background-image: url("https://raw.githubusercontent.com/darkun7/ojs-theme/main/asset/cover-wartapengabdian-g15.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 210px;
-    background-position: 2px -79px;
-  }
-
+ 
  /* NEW FRAME */
  body{
-     /* white */
-     background: url("https://raw.githubusercontent.com/darkun7/ojs-theme/main/asset/pattern_backjaps-unej.png");
-     background:
-     linear-gradient(
-         180deg,
-         rgba(255,255,255,0.1) 170px,
-         rgba(255,255,255,0.1) 100%),
-         url("https://raw.githubusercontent.com/darkun7/ojs-theme/main/asset/pattern_backjaps-unej.png") !important;
+    background: url("https://raw.githubusercontent.com/Isabel621/OJS-Theme/main/assets/pattern-lentera.png");
+    background:
+        linear-gradient(180deg,
+        #3f5e85 130px,
+        #DED9C3 130px,
+        #DED9C3 170px,
+        rgba(255, 255, 255, 0.1) 170px,
+        rgba(255, 255, 255, 0.1) 100%),
+        url("https://raw.githubusercontent.com/Isabel621/OJS-Theme/main/assets/pattern-lentera.png") !important;
+        background-repeat: no-repeat;
  }
  
  .pkp_structure_page{
      max-width: 1200 !important;
-     margin: 0px auto 25px auto !important;
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+     margin: 0px auto 30px auto !important;
+     box-shadow: none !important;
  }
  .pkp_head_wrapper{
      margin: 0px !important;
@@ -156,72 +152,89 @@
  .pkp_structure_footer_wrapper{
      border-radius: 0 0 0 0;
  }
-
- .pkp_navigation_primary_row {
-    margin-top: 51px !important;
-    background-color: var(--biru) !important;
-}
-
-.pkp_navigation_primary_wrapper {
-    background-color: var(--biru) !important;
-}
  
  /* Search Button */
  .fa.fa-search{
      color: var(--main);
  }
 
- #navigationPrimary ul li a {
-    background-color: var(--biru);
- }
+ @media (min-width: 992px) {
+    [data-toggle="dropdown"]:hover+.dropdown-menu, .dropdown-menu:hover {
+        display: block;
+        background-color: var(--main);
+    }}
  
  .pkp_search.pkp_search_desktop{
-    color: #fff;
+     color: rgba(0, 0, 0, 0.54);
  }
  
  .pkp_site_nav_menu .pkp_nav_list a{
      font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
      font-size: 13px;
-     color: #fff !important;
-     font-weight: 700;
-     text-transform: uppercase;
- }
- 
- .pkp_site_nav_menu .pkp_nav_list a:focus{
-     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
-     font-size: 13px;
-     color: #273c75;
-     background-color: transparent;
+     color: #000 !important;
      font-weight: 700;
      text-transform: uppercase;
  }
 
+ .pkp_site_nav_menu .pkp_nav_list a:hover{
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    color: var(--main);
+    font-weight: 700;
+    border-bottom-width: 2px;
+    border-bottom: var(--main);
+    text-transform: uppercase;
+}
+ 
+ .pkp_site_nav_menu .pkp_nav_list a:focus{
+     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+     font-size: 13px;
+     color: var(--main);
+     background-color: transparent;
+     font-weight: 700;
+     text-transform: uppercase;
+ }
+ 
  @media (min-width: 992px) {
     [data-toggle="dropdown"]:hover+.dropdown-menu, .dropdown-menu:hover {
         display: block;
-        background-color: var(--biru);
-    }}
- 
+        background-color: var(--secondary) !important;
+    }
+}
+
  /* SUBMISSION BUTTON */
  
  a.block_make_submission_link{
-    padding: 5px 10px; /* Menghilangkan !important */
-    width: 100%;
-    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
-    font-weight: 700;
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
-    background: #273c75;
-    color: #fff;
-    border: none;
-    transition: background 0.3s ease; /* Menambahkan transisi untuk perubahan warna */
+     padding: 5px 10px; /* Menghilangkan !important */
+     width: 100%;
+     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+     font-weight: 700;
+     display: block;
+     text-align: center;
+     text-transform: uppercase;
+     background: var(--background) !important;
+     color: var(--secondary) !important;
+     border: 1px solid;
+     transition: background 0.3s ease; /* Menambahkan transisi untuk perubahan warna */
  }
  a.block_make_submission_link:hover{
-    background: #E1AD21; /* Mengubah warna latar belakang saat hover */
-    color: #fff; /* Tetap putih saat hover */
+     background: var(--secondary); /* Mengubah warna latar belakang saat hover */
+     color: #fff; /* Tetap putih saat hover */
      
  }
+
+ /* Side menu head */
+ .sidemenuHead {
+    background-color: var(--secondary) !important;
+    display: block !important;
+    padding: 5px !important;
+    text-align: center !important;
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 5px !important;
+    box-shadow: none !important;
+    border: none !important;
+}
  
  /* Side Button */
  .actionBtn3 {
@@ -232,14 +245,14 @@
      display: block;
      text-align: center;
      text-transform: uppercase;
-     background: #273c75;
-     color: #fff;
-     border: none;
+     background: #fff;
+     color: var(--secondary);
+     border: 1px solid;
      transition: background 0.3s ease; /* Menambahkan transisi untuk perubahan warna */
  }
  
  .actionBtn3:hover {
-     background: #E1AD21; /* Mengubah warna latar belakang saat hover */
+     background: var(--secondary); /* Mengubah warna latar belakang saat hover */
      color: #fff; /* Tetap putih saat hover */
  }
  
@@ -274,11 +287,45 @@
      text-decoration: none;
  }
 
- .pkp_block {
+ .sidemenu-list li {
+    margin-bottom: 8px;
+    background-color: var(--main) !important;
+    display: block !important;
+    padding: 10px 5px !important;
+    text-align: center !important;
+    color: #000000 !important;
+    text-decoration: none;
+    border-radius: 5px !important;
+}
+
+.sidemenu-list li a {
+    color: #fff !important;
+}
+
+.pkp_block .title {
+    display: inline-block;
+    padding-bottom: 0.5em;
+    border-bottom: 3px solid #63c19d;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.pkp_block {
     font-size: 14px;
     line-height: 20px;
     clear: both;
     border-bottom: 1.5px solid #ddd;
+}
+
+.sidemenu-head {
+    background-color: #63C19D !important;
+    display: block !important;
+    padding: 5px !important;
+    text-align: center !important;
+    color: #046880 !important;
+    text-decoration: none;
+    border-radius: 5px !important;
+    box-shadow: inset 0 -1em 1em rgba(0, 0, 0, 0.1);
 }
  
  .current_issue h2 {
@@ -291,15 +338,16 @@
  }
  .pkp_structure_head {
      background-image: none!important;
+     background-color: var(--main) !important;
  }
  .pkp_site_name .is_text{
     color:#ffffff;
  }
  .pkp_navigation_primary_wrapper {
-     background-color: #fff;
+     background-color: var(--secondary);
  }
  .pkp_navigation_primary_row {
-     background: #fff;
+     background: var(--secondary);
      margin-top: 10px;
  }
  #pkp_content_nav{
@@ -314,8 +362,7 @@
  .pkp_structure_footer_wrapper {
      background: rgba(0, 0, 0, 0.05);
      border-top: 1px solid #ddd;
-     border-bottom: 20px solid #273c75;
+     border-bottom: 20px solid var(--main);
  }
  
-
  
