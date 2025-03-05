@@ -109,7 +109,7 @@
  /* NEW FRAME */
  body{
      /* white */
-     background: url("https://raw.githubusercontent.com/darkun7/ojs-theme/main/asset/pattern_japs.png");
+     background: url("https://raw.githubusercontent.com/darkun7/ojs-theme/main/asset/pattern_ijsrh.png");
      background:
      linear-gradient(
          180deg,
@@ -118,7 +118,7 @@
          rgba(225,173,33,1) 170px,
          rgba(255,255,255,0.1) 170px,
          rgba(255,255,255,0.1) 100%),
-         url("https://raw.githubusercontent.com/darkun7/ojs-theme/main/asset/pattern_japs.png") !important;
+         url("https://raw.githubusercontent.com/darkun7/ojs-theme/main/asset/pattern_ijsrh.png") !important;
  }
  
  .pkp_structure_page{
